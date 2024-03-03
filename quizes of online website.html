@@ -1,0 +1,96 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Platform</title>
+    <style>
+        /* styles.css */
+
+/* Styles for the overall quiz section */
+#quizzes {
+    padding: 20px;
+}
+body{
+    background-color: lightblue;
+}
+
+/* Styles for each individual question */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Styles for the question text */
+.question p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+/* Styles for the list of options */
+.question ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 40px;
+}
+
+/* Styles for the radio buttons */
+.question input[type="radio"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Styles for the submit button */
+#submit-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+#submit-button:hover {
+    background-color: #0056b3;
+    font-size: 30px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Learning Platform</h1>
+    </header>
+    
+    <main>
+        <section id="quizzes">
+            <h2>Deep Learning Quiz</h2>
+            <div class="question 1 ">
+                <p>1. What is a perceptron?</p>
+                <ul>
+                    <li><input type="radio" name="q1" value="a"> A type of neural network</li>
+                    <li><input type="radio" name="q1" value="b"> A type of optimization algorithm</li>
+                    <li><input type="radio" name="q1" value="c"> A type of activation function</li>
+                </ul>
+            </div>
+            <div class="question 2">
+                <p>2. What is backpropagation?</p>
+                <ul>
+                    <li><input type="radio" name="q2" value="a"> An algorithm for training neural networks</li>
+                    <li><input type="radio" name="q2" value="b"> A technique for data preprocessing</li>
+                    <li><input type="radio" name="q2" value="c"> A type of regularization method</li>
+                </ul>
+            </div>
+            <!-- Add more questions as needed -->
+            <button onclick="submitQuiz()">Submit Answers</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Learning Platform</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
